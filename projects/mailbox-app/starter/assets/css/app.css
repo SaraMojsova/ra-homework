@@ -1,0 +1,74 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Work Sans', sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  margin-bottom: 32px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex: auto;
+}
+
+.logo-container img {
+  height: 32px;
+}
+
+.logo-container .app-name {
+  margin: 0;
+  padding-left: 8px;
+  font-size: 20px;
+}
+
+.nav-headline {
+  font-size: 32px;
+  padding: 5px;
+  flex: auto;
+}
+
+.login-form {
+  max-width: 370px;
+  margin: 40px auto;
+}
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.list-group-item  {
+  display: flex;
+  align-items: center;
+}
+
+.list-content {
+  flex: 1;
+  padding-left: 16px;
+}
+
+.btn-bookmark {
+  padding: 5px 0 0;
+  margin-left: 10px;
+  color: rgba(0 , 0, 0, .25);
+  cursor: pointer;
+}
+
+.list-group-item.active .btn-bookmark {
+  color: #fff;
+} 
