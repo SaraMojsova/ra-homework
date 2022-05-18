@@ -1,0 +1,90 @@
+body {
+    margin: 32px;
+    font-family: sans-serif;
+  }
+  
+  div {
+    border: 1px solid #6f79a8;
+    padding: 16px 24px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+    margin-bottom: 24px;
+    max-width: 370px;
+    margin: 32px auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2,
+  h3 {
+    text-align: center;
+    margin: 0 0 24px;
+  }
+  
+  button {
+    font: inherit;
+    font-size: 16px;
+    padding: 14px 16px;
+    border: 1px solid #9fa8da;
+    background: #9fa8da;
+    color: #000;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+    margin-top: 16px;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:hover,
+  button:active {
+    background: #6f79a8;
+    border-color: #6f79a8;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+  }
+  
+  button:disabled {
+    background: #c5cae9;
+    border-color: #c5cae9;
+    box-shadow: none;
+  }
+  
+  input {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+    border-color: #9fa8da;
+    border-radius: 4px;
+    padding: 12px 14px;
+  }
+  
+  input:focus {
+    border-color: #6f79a8;
+  }
+  
+  input.error {
+    border-color: #ff1744;
+  }
+  
+  p {
+    margin: 5px 0 16px;
+    color: #ff1744;
+    font-size: 14px;
+  }
+  
+/* new code */
+  .hide{
+    background: none;
+  }
+  .icons{
+    padding-right: 30px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0AVvdQVH2LdtsYFauXEnnrgt2CG1diwowkJ1qLwGXLjJrzStCxFnH4p2rEDA9jkomk54&usqp=CAU") no-repeat right;
+    background-size: 20px;
+  }
+  input.success{
+    border-color: green;
+  }
+
