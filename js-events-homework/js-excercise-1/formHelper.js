@@ -71,10 +71,6 @@ function validatePasswordLength(input, min, max) {
      const inputPassword = input.value;    
      const minLength = min;    
      const maxLength = max; 
-     
-     let lengthPassword = inputPassword.length++
-     console.log(inputPassword)
-     console.log(lengthPassword)
 
      if (inputPassword.length !== 0 && inputPassword.length < minLength || inputPassword.length > maxLength) {      
          return showError(input, 'Password must contain 8-20 characters');    
