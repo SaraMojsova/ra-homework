@@ -4,16 +4,11 @@ let userPassword = document.querySelector('#userPassword')
 userEmail.addEventListener('input', (e) => {
     e.preventDefault()  
     console.log(e.target)  
-    const emailInput = e.target  
-    // const emailInputValidation = validateEmail(emailInput); 
-    // const lengthEmailInputValidation = validateEmailLength(emailInput, 3, 320); 
+
 })
 userPassword.addEventListener('input', (e) => {
     e.preventDefault  
-    const passwordInput = e.target
-    //  const passwordInputValidation = validatePassword(passwordInput); 
-    //  const lengthPasswordInputValidation = validatePasswordLength(passwordInput, 8, 20);
-
+   
 })
 loginForm.addEventListener('submit', event => {
     event.preventDefault(); 
