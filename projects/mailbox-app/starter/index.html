@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ICO -->
+  <link rel="shortcut icon" type="image/png" href="./assets/images/mailbox.ico" />
+
+  <!-- Google fonts injected - use this page to generate the fonts https://fonts.google.com/ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- Own CSS -->
+  <link rel="stylesheet" href="./assets/css/app.css" />
+  <title>Mailbox</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo-container">
+      <img src="./assets/images/logo.png" alt="Logo" class="logo" />
+      <p class="m-0 position-relative">
+        <span id="app-name" class="app-name">Mailbox</span>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger hide">
+          99+
+        </span>
+      </p>
+    </div>
+    <div class="nav-headline">
+      <!-- non authenticated -->
+      <span id="welcome-label">Welcome to mailbox</span>
+      <!-- authenticated -->
+      <div id="search-field" class="input-group hide">
+        <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+        <input type="text" class="form-control" placeholder="Search inbox">
+      </div>
+    </div>
+    <!-- Welcome to mailbox -->
+    </div>
+    <div class="nav-buttons">
+      <!-- non authenticated buttons -->
+      <button id="login-btn" type="button" class="btn btn-link">Login</button>
+      <button id="register-btn" type="button" class="btn btn-link">Register</button>
+
+      <!-- authenticated buttons -->
+      <button id="logout-btn" class="btn btn-danger hide"><span>Logout</span> <i
+          class="bi bi-box-arrow-right"></i></button>
+    </div>
+  </nav>
+  <!-- Main -->
+  <main>
+    <!-- Logged out user view -->
+    <!-- Login form -->
+    <!-- class="needs-validation was-validated" -->
+    <form id="login-form" class="login-form hide" novalidate>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="userEmail" placeholder="name@example.com"
+          value="aleksandar@rhinoent.net">
+        <label for="userEmail" class="form-label">Email address</label>
+        <div class="invalid-feedback" id="error-msg"></div>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="userPassword" placeholder="Password" value="Test1!">
+        <label for="userPassword" class="form-label">Password</label>
+        <div class="invalid-feedback" id="error-msg"></div>
+      </div>
+      <div class="text-danger text-center mb-2" id="submit-error"></div>
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary">
+          <span id="spinner"class="spinner-border spinner-border-sm hide" role="status" aria-hidden="true"></span>
+          Sign in
+        </button>
+      </div>
+    </form>
+
+    <!-- TODO: Register form to be implemented! -->
+
+    <!-- Logged in user view -->
+    <div class="conainer container-lg">
+      <ul id="messages-buttons" class="nav hide">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-book"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-star"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-trash"></i></a>
+        </li>
+      </ul>
+      <!-- List messages -->
+      <div class="list-group" id="messages-container"></div>
+    </div>
+
+  </main>
+  <!-- Footer -->
+
+  <!-- scripts -->
+  <script src="./assets/js/helpers/index.js"></script>
+  <script src="./assets/js/helpers/formHelpers.js"></script>
+  <!-- <script src="./assets/js/helpers/dom.js"></script> -->
+  <script src="./assets/js/data/index.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html> 
