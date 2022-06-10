@@ -46,8 +46,29 @@ const main =(array,fn,padding)=>{
     }
     return newArray
 }
+// console.log('Part 3 of the exercise --------------')
+
+const sort=(array)=>{
+    return array.sort((a,b)=>b-a)
+}
+const mainSort =(array,fn,padding)=>{
+    const newArray=[]
+    for(const elem of array){
+        newArray.push(fn(elem,padding))
+    }
+    return (fn)=>{
+        return fn(newArray)
+    }
+}
 const incrHOF=main(initialData,operationInc,3)
 const decrHOF=main(initialData,operationDec,3)
-console.log(incrHOF)
-console.log(decrHOF)
-// Where to print the message `HOF call (increment) by 3` and `HOF call (increment) by 3` ?
+console.log('HOF call (increment) by 3',incrHOF)
+console.log('HOF call (decrement) by 3',decrHOF)
+
+
+console.log('Part 3 of the exercise --------------')
+
+const sortIncrHOF=mainSort(initialData,operationInc,3)
+const sortDecrHOF=mainSort(initialData,operationDec,3)
+console.log('HOF call (increment) by 3 and sort DESC',sortIncrHOF(sort))
+console.log('HOF call (decrement) by 3 and sort DESC',sortDecrHOF(sort))
