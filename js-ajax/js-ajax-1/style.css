@@ -1,0 +1,29 @@
+#cards{
+    display:flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content:space-evenly;
+    position: relative;
+}
+
+.newPost .card-body{
+    /* background-color: pink; */
+    height: 350px;
+}
+
+.newPost .btn{
+    position: absolute;
+    bottom: 20px;
+    left:114px;
+}
+
+nav .btn-primary{
+    margin-right: 700px;
+}
+nav{
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+}
