@@ -6,6 +6,21 @@ html {
   flex-direction: column;
 
 }
+/* main */
+main {
+  height: 100%;
+}
+/* Product card styles */
+.product-category-badge {
+  margin: 1rem auto 0 1rem;
+}
+.product-brand-badge {
+  font-weight: 700;
+  margin: .5rem auto 1rem 1rem;
+}
+.card-wrapper {
+  margin: 20px 0;
+}
 
 .mainSection{
   display:flex;
@@ -14,23 +29,33 @@ html {
 }
 
 .card {
-  /* height: 100%; */
+  height: 100%;
+}
+#card-mdb{
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+
 }
 
 .card-body {
   display: flex;
   flex-direction: column;
 }
-
+.card-buttons {
+  margin-top: auto;
+}
+.nav-item.dropdown .dropdown-menu {
+  max-height: 400px;
+  overflow: auto;
+}
+/* homework 1 mdb card */
 .carousel{
   width: 100%;
   display: flex;
   padding: 10px;
-  /* background-color: black; */
 }
 .dot{
   color:dodgerblue;
