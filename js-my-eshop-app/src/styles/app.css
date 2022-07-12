@@ -31,14 +31,6 @@ main {
 .card {
   height: 100%;
 }
-#card-mdb{
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-
-}
 
 .card-body {
   display: flex;
@@ -56,6 +48,14 @@ main {
   width: 100%;
   display: flex;
   padding: 10px;
+}
+#card-mdb{
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+
 }
 .dot{
   color:dodgerblue;
