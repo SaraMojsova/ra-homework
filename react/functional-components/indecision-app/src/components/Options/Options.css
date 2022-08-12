@@ -1,0 +1,56 @@
+.button {
+  background: #8357c5;
+  border: none;
+  border-bottom: .3rem solid darken(#8357c5, 10%);
+  color: white;
+  font-weight: 500;
+  padding: 1.2rem;
+}
+
+.button_link {
+  background: none;
+  border: none;
+  color: #a5afd7;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  background-color: #2B2F40;
+  height: 50px;
+  color: white;
+  width: 70%;
+  border: none;
+  font-size: 24px;
+}
+
+.input-container {
+  border-top: 2px solid white;
+  margin-bottom: 8px;
+  padding: 12px;
+}
+
+.remove-all {
+  padding: 12px;
+  /* display: flex; */
+}
+
+.remove_button {
+  background-color: #8357c5;
+  padding: 12px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.error-message {
+  color: red;
+}
+
+.remove-option{
+  display: grid;
+  grid-template-columns: 50px 50px;
+}
