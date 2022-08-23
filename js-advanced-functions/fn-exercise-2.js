@@ -7,18 +7,18 @@ const user={
         console.log(`First name:${this.firstName} \nLast name:${this.lastName}`)
     },
     getUserData(field,fallbackMsg){
-        field=this?.firstName 
+        field=this?.['firstName']
         let fieldData= field??fallbackMsg
         console.log('Get first name:',fieldData)
 
-        field=this?.isLoggedIn
+        field=this?.['isLoggedIn']
         fieldData= field??fallbackMsg
         console.log('Get isLoggedIn:',fieldData)
     }
     
 }
 user.print()
-user.getUserData(user.field,`${user.field??'isLoggedIn'} field doesn\'t exist on user1 `)
+user.getUserData('firstName',`${user.field??'isLoggedIn'} field doesn\'t exist on user1 `)
 
 
 const user2={
