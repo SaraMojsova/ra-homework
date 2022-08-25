@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Button from "./components/Button/Button";
 import Options from "./components/Options/Options";
 import AddOptions from "./components/AddOption/AddOption";
+import DarkModeBtn from "./components/DarkModeBtn/DarkModeBtn"
 
 const IndecisionApp = () => {
   const title = 'Indecision App';
@@ -46,8 +47,33 @@ const IndecisionApp = () => {
 
   //   updateList(list.filter(option=> option !==optionToRemove))
   // }
+  
+  // React stylings homework
+  const darkTheme={
+    background:'black',
+    color:'white'
+  }
+  const lightTheme={
+    background:'white',
+    color:'black'
+  }
+  const themes={
+    light:lightTheme,
+    dark:darkTheme
+  }
+  const [mode,setMode]=useState('light')
+  const toggleMode=()=>{
+      mode==='light'? setMode('dark') : setMode('light')
+  }
+  const style=themes[mode]
+  // React stylings -------
   return (
-    <div className='container'>
+    <>
+    <div className='container'
+    style={style} mode={mode} onClick={toggleMode}
+    >
+      <DarkModeBtn mode={mode} className={mode}/>
+
       <Header
         title={title}
         subtitle={subtitle}
@@ -65,6 +91,7 @@ const IndecisionApp = () => {
       />
       <AddOptions handleAddOption={handleAddOption} />
     </div>
+    </>
   )
 }
 
