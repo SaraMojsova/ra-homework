@@ -1,0 +1,31 @@
+.user-details {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 20px;
+}
+
+.user-edit {
+  display: flex;
+  margin-left: auto;
+  margin-right: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 0;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 6px 16px;
+  cursor: pointer;
+}
+.user-details-block{
+  flex-wrap: nowrap;
+}
+.user-details-block input{
+  border: none;
+  border-radius: 10px;
+  padding:10px 10px;
+  /* width:200px; */
+  display:inline;
+  box-shadow: 0px 0px 5px white;
+
+
+}
