@@ -22,12 +22,12 @@ const AddOptions = (props) => {
   }
 
   return (
-    <div className='input-container'>
+    <div className='input-container' style={props.style} mode={props.mode}>
       <form onSubmit={handleAddOption}>
-        <input type="text" name="option" />
-        <button className='button'>Add Option</button>
+        <input type="text" name="option" style={props.style} mode={props.mode} />
+        <button className='button' style={props.style} mode={props.mode}>Add Option</button>
       </form>
-      {error && <p className='error-message'>{error}</p>}
+      {error && <p className='error-message' style={props.style} mode={props.mode}>{error}</p>}
     </div>
   )
 }

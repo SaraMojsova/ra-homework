@@ -50,11 +50,11 @@ const IndecisionApp = () => {
   
   // React stylings homework
   const darkTheme={
-    background:'black',
+    backgroundColor:'black',
     color:'white'
   }
   const lightTheme={
-    background:'white',
+    backgroundColor:'white',
     color:'black'
   }
   const themes={
@@ -69,27 +69,33 @@ const IndecisionApp = () => {
   // React stylings -------
   return (
     <>
+    <DarkModeBtn style={style} mode={mode} className={mode} onClick={toggleMode}/>
+
     <div className='container'
     style={style} mode={mode} onClick={toggleMode}
     >
-      <DarkModeBtn mode={mode} className={mode}/>
 
       <Header
         title={title}
         subtitle={subtitle}
+        style={style} mode={mode}
       />
       <Button
         buttonText={buttonText}
         handlePick={handlePick}
         hasOptions={options.length > 0}
+        style={style} mode={mode}
       />
       <Options
         removeText={removeText}
         options={options}
         handleDeleteOptions={handleDeleteOptions}
         // handleDeleteOption={handleDeleteOption}
+        style={style} mode={mode}
       />
-      <AddOptions handleAddOption={handleAddOption} />
+      <AddOptions handleAddOption={handleAddOption}
+      style={style} mode={mode} 
+      />
     </div>
     </>
   )

@@ -12,6 +12,7 @@ const Button = (props) => {
         className='big-button'
         onClick={props.handlePick}
         disabled={!props.hasOptions}
+        style={props.style} mode={props.mode}
       >
         {props.buttonText}
       </button>
