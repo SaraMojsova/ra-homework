@@ -69,10 +69,10 @@ const IndecisionApp = () => {
   // React stylings -------
   return (
     <>
-    <DarkModeBtn style={style} mode={mode} className={mode} onClick={toggleMode}/>
+    <DarkModeBtn style={style} mode={mode} toggleMode={toggleMode}/>
 
     <div className='container'
-    style={style} mode={mode} onClick={toggleMode}
+    style={style} mode={mode} 
     >
 
       <Header

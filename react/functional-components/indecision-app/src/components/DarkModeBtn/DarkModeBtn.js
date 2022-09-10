@@ -14,7 +14,7 @@ const Btn= styled.button`
 `;
 // className mode does nothing just switches the className
     return(
-        <Btn mode={props.mode} style={props.style} className={props.mode}  onClick={props.toggleMode}>{props.mode==='light'? 'Light Mode':'Dark Mode'}</Btn>
+        <Btn style={props.style} onClick={props.toggleMode}>{props.mode==='light'? 'Light Mode':'Dark Mode'}</Btn>
     )
     
 
