@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My e-shop</title>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- material design bootstrap (MDB) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./src/styles/app.css" />
+</head>
+
+<body>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#!">My E-shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Shop</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./pages/products.html">All Products</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#!">smartphones</a></li>
+              <li><a class="dropdown-item" href="#!">laptops</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex" id="navbar-buttons">
+          <!-- Show it when authenticated -->
+          <!-- <a class="btn btn-primary" href="#!" role="button">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge bg-danger ms-2">8</span>
+          </a>
+          <button class="btn btn-outline-dark ms-2" type="submit">
+            <i class="fas fa-sign-out-alt me-1"></i>
+          </button> -->
+          <!-- Show it when non-authenticated -->
+          <a href="./pages/login.html" class="btn btn-outline-dark" type="submit">
+            <i class="fas fa-sign-in-alt me-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="mainSection">
+  <!-- card mdb -->
+  <div id="card-mdb" class="card mb-10" style="max-width: 1100px;">
+    <!-- <div class="row g-0"> -->
+      <!-- <div class="col-md-4 col-sm-4 col-xs-4">
+        <img
+          src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp"
+          alt="Trendy Pants and Shoes"
+          class="img-fluid rounded-start"
+        />
+      </div> -->
+      <!-- carousel -->
+      <!-- Carousel wrapper -->
+<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselBasicExample"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+
+  <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <img src="https://dummyjson.com/image/i/products/1/thumbnail.jpg" class="d-block w-100" alt="Sunset Over the City"/>
+      
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="https://dummyjson.com/image/i/products/2/thumbnail.jpg" class="d-block w-100" alt="Canyon at Nigh"/>
+     
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <img src="https://dummyjson.com/image/i/products/4/thumbnail.jpg" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
+      
+    </div>
+  </div>
+  <!-- Inner -->
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+<!-- Carousel wrapper -->
+<!-- carousel -->
+
+      <div class="col-md-12">
+        <div class="card-body">
+          <h5 class="card-title">Quant trident shirts</h5>
+          <div>
+            <img src="./src/styles/star-icon.png" alt="">
+            <img src="./src/styles/star-icon.png" alt="">
+            <img src="./src/styles/star-icon.png" alt="">
+            <img src="./src/styles/star-icon.png" alt="">
+            <p class="rate">310</p>
+          </div>
+          <p class="card-text">
+            <small class="text-muted">100% cotton <span class="dot">•</span> Light weight <span class="dot">•</span> Best finish </small> <br>
+            <small class="text-muted"> Unique design <span class="dot">•</span> For men <span class="dot">•</span> Casual </small>
+          </p>
+          <p class="card-text">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+          </p>
+          <div class="prices">
+          <h5 class="price">$13.99</h5>
+          <p class="old-price">$20.99</p>
+          </div>
+          <p class="shipping">Free shipping</p>
+          <button type="button" class="btn btn-primary">ADD TO CART</button>
+          <button type="button" class="btn btn-outline-primary">ADD TO WISHLIST</button>
+
+
+          
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+  <!-- end of card mdb -->
+</section>
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
+  <script type="module" src="./src/scripts/app.js"></script>
+</body>
+
+</html>

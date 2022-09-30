@@ -1,0 +1,91 @@
+body,
+html {
+  background-color: #eee;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+/* main */
+main {
+  height: 100%;
+}
+/* Product card styles */
+.product-category-badge {
+  margin: 1rem auto 0 1rem;
+}
+.product-brand-badge {
+  font-weight: 700;
+  margin: .5rem auto 1rem 1rem;
+}
+.card-wrapper {
+  margin: 20px 0;
+}
+
+.mainSection{
+  display:flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-buttons {
+  margin-top: auto;
+}
+.nav-item.dropdown .dropdown-menu {
+  max-height: 400px;
+  overflow: auto;
+}
+/* homework 1 mdb card */
+.carousel{
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+#card-mdb{
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+
+}
+.dot{
+  color:dodgerblue;
+}
+
+.card-body .btn-primary{
+margin-bottom: 10px;
+}
+.card-text{
+  padding: 10px 0px;
+  margin:0;
+}
+.prices{
+  padding-top: 100px;
+}
+.price{
+  display: inline;
+}
+.old-price{
+  text-decoration: line-through;
+  color: red;
+  display: inline;
+}
+.shipping{
+  color:mediumseagreen;
+  font-weight: bold;
+  font-size: small;
+}
+.rate{
+  display: inline;
+}
+
+
