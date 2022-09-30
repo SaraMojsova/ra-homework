@@ -1,0 +1,7 @@
+.navbar span {
+  cursor: pointer;
+}
+
+#welcome {
+  pointer-events: none;
+}
