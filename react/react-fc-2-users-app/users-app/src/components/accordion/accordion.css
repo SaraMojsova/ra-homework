@@ -1,0 +1,43 @@
+.accordion {
+  box-shadow: 0px 0px 5px white;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  max-width: 70%;
+  color: white;
+  padding: 16px;
+}
+
+.accordion header {
+  padding: 16px;
+  display: flex;
+  min-height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-title {
+  display: flex;
+  align-items: center;
+}
+
+.accordion-title .image {
+  max-width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid white;
+  margin-right: 20px;
+}
+
+.accordion-title .image img {
+  max-width: 100%;
+}
+
+.accordion .btn {
+  background: none;
+  outline: 0;
+  box-shadow: none;
+  color: white;
+  border: 0;
+  font-size: 32px;
+  cursor: pointer;
+}
