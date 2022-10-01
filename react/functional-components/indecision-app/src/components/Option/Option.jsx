@@ -1,27 +1,17 @@
-import RemoveOption from "../RemoveOption/RemoveOption";
-// import { useState } from "react";
+import './Option.css'
+
 const Option = (props) => {
   const removeOptionText='Remove'
-    // const [list,updateList]=useState()
 
-  
-  const handleDeleteOption=(event,optionToRemove)=>{
-    // props.setOptions(props.options.filter(option=> optionToRemove!==option))
-    event.target.style.display='none'
-    // updateList(list.filter(option=> option !==optionToRemove))
 
-    console.log('is working')
-  }
   return (
     <>
+    <div className='option'>
     <div>{props.optionText}</div>
-    <RemoveOption 
-    removeOptionText={removeOptionText}
-    handleDeleteOption={handleDeleteOption}
-    />
-    
-
-
+    <button className="removeOption" onClick={()=> props.handleDeleteOption(props.optionText)}>
+    {removeOptionText}
+    </button> 
+    </div>
     </>
   )
 }

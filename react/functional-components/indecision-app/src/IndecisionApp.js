@@ -34,18 +34,11 @@ const IndecisionApp = () => {
     setOptions([]);
   }
 
-  // const handleDeleteOption=(optionToRemove)=>{
-  //   // setOptions(options.filter(option=> optionToRemove!==option))
-  //   console.log('is working')
-  // }
+  const handleDeleteOption=(optionToRemove)=>{
+    setOptions(options.filter(option=> optionToRemove!==option))
+    console.log('is working')
+  }
 
-  // const [list,updateList]=useState(options)
-  // const handleDeleteOption=(event,optionToRemove)=>{
-  //   event.target.style.display='none'
-  //       console.log('is working')
-
-  //   updateList(list.filter(option=> option !==optionToRemove))
-  // }
   return (
     <div className='container'>
       <Header
@@ -61,7 +54,7 @@ const IndecisionApp = () => {
         removeText={removeText}
         options={options}
         handleDeleteOptions={handleDeleteOptions}
-        // handleDeleteOption={handleDeleteOption}
+        handleDeleteOption={handleDeleteOption}
       />
       <AddOptions handleAddOption={handleAddOption} />
     </div>

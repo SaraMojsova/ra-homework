@@ -1,0 +1,10 @@
+.removeOption{
+    color: red;
+    background: none ;
+    border:none;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+}
