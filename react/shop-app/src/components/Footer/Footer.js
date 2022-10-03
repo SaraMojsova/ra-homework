@@ -7,7 +7,6 @@ import logo from '../../assets/logo.svg';
 
 
 const FooterContainer = styled.footer`
-    position: absolute;
     bottom: 0;
     width: 100%;
  
