@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import search from '../../assets/search.svg';
 import cart from '../../assets/cart.svg';
 import user from '../../assets/user.svg';
+import { NavLink } from 'react-router-dom';
 
 const NavbarButtonsContainer = styled.div`
   display: none;
@@ -39,6 +40,12 @@ const NavbarButtonsContainer = styled.div`
 
 // TODO: Implmenet Link component for all navigation buttons
 const NavbarButtons = ({ isLoggedIn }) => {
+  const logOutHandler=()=>{
+    if(!isLoggedIn){
+      console.log('Log out')
+    }
+  }
+
   return (
     <NavbarButtonsContainer>
       <div className='search-btn btn-container'>
@@ -53,9 +60,11 @@ const NavbarButtons = ({ isLoggedIn }) => {
           <img src={user} alt='Logged out user' />
         </button>
       ) : (
-        <button className='auth-btn btn-container'>
+        <NavLink to='/login'>
+        <button className='auth-btn btn-container' onClick={logOutHandler}>
           <img src={user} alt='Logged in user' />
         </button>
+        </NavLink>
       )}
     </NavbarButtonsContainer>
   );

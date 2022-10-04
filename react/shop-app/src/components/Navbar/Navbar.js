@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 import logo from '../../assets/logo.svg';
 import NavbarButtons from './NavbarButtons';
+import { useState, useEffect } from 'react';
+import { Navigate, useRouteMatch ,Link} from 'react-router-dom';
 
 const NavBarContainer = styled.div`
   display: flex;
@@ -65,6 +67,20 @@ const NavBarContainer = styled.div`
 function NavBar({
   navItems = [],
 }) {
+
+    const [isLoggedIn, setIsLoggedIn]= useState(false)
+
+    // const match= useRouteMatch()
+    // console.log('match',match)
+
+    // useEffect(() => {
+    //   if(match.url==='/checkout' && !isLoggedIn) {
+    //   console.log(match)
+    //   }
+    // }, ) 
+    
+   
+
   return (
     <NavBarContainer>
       <div className='nav-center'>
@@ -76,11 +92,23 @@ function NavBar({
         </div>
         <ul className='nav-links'>
           {
-            navItems.map(({ label, url, id }, index) => {
+            navItems.map(({ label, url, id, authRequired }, index) => {
               console.log('Link navigation', label, url, index);
+              console.log(authRequired)
+              console.log('Url',url)
+              if(!isLoggedIn && authRequired)
+              return null;
+              // if(!isLoggedIn && url==='/checkout')
+              // return(
+              //   url==='/login'
+              // )
+              
+              else
               return (
                 // TODO: Implement Link component and add the url parameter
-                <li key={`${index}_${id}`}>{label}</li>
+                <li key={`${index}_${id}`}>
+                 <Link to={url}>{label}</Link> 
+                 </li>
               )
             })
           }

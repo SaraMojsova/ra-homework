@@ -50,7 +50,7 @@ const Login = ({ onSubmit }) => {
                 <form className={styles['input-container']} onSubmit={submitHandler}>
                     <InputField type="email" placeholder="Email address" onChange={changeHandler}/>
                     <InputField type="password" placeholder="Password" onChange={changeHandler} />
-                    <p class={styles['forgot-password']}>Forgot your password?</p>
+                    <p className={styles['forgot-password']}>Forgot your password?</p>
                     <button>Sign in</button>
                     <p className={styles['create-account']}>Don't have an account? Create account</p>
                 </form>
