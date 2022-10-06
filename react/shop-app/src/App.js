@@ -3,7 +3,8 @@ import { NAV_ITEMS } from './helpers/navigation';
 import Footer from './components/Footer/Footer';
 import './App.css';
 import Login from './components/Login/Login';
-import { Route, Switch, Redirect, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Switch, Redirect, } from 'react-router-dom';
+import Home from './pages/Home/Home';
 
 
 function App() {
@@ -11,7 +12,11 @@ function App() {
     
     <div className="app">
     <NavBar navItems={NAV_ITEMS} />
+    
       <Switch>
+      <Route path='/' exact>
+        <Home/>
+        </Route>
         <Route path='/login'>
           <Login/>
         </Route>
@@ -19,7 +24,6 @@ function App() {
           <Redirect to='/login'/>
         </Route>
       </Switch>
-      {/* <Login/> */}
       <Footer />
     </div>
    

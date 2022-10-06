@@ -9,6 +9,7 @@ import logo from '../../assets/logo.svg';
 const FooterContainer = styled.footer`
     bottom: 0;
     width: 100%;
+    position:relative;
  
     img{
         width:80px;

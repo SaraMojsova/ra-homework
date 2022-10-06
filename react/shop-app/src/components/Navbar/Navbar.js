@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 import logo from '../../assets/logo.svg';
 import NavbarButtons from './NavbarButtons';
-import { useState, useEffect } from 'react';
-import { Navigate, useRouteMatch ,Link} from 'react-router-dom';
+import { useState,  } from 'react';
+import { Link} from 'react-router-dom';
 
 const NavBarContainer = styled.div`
   display: flex;
@@ -70,17 +70,6 @@ function NavBar({
 
     const [isLoggedIn, setIsLoggedIn]= useState(false)
 
-    // const match= useRouteMatch()
-    // console.log('match',match)
-
-    // useEffect(() => {
-    //   if(match.url==='/checkout' && !isLoggedIn) {
-    //   console.log(match)
-    //   }
-    // }, ) 
-    
-   
-
   return (
     <NavBarContainer>
       <div className='nav-center'>
@@ -98,10 +87,6 @@ function NavBar({
               console.log('Url',url)
               if(!isLoggedIn && authRequired)
               return null;
-              // if(!isLoggedIn && url==='/checkout')
-              // return(
-              //   url==='/login'
-              // )
               
               else
               return (
