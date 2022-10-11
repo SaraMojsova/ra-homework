@@ -5,7 +5,7 @@ import './App.css';
 import Login from './components/Login/Login';
 import { Route, Switch, Redirect, } from 'react-router-dom';
 import Home from './pages/Home/Home';
-
+import About from './pages/About/About'
 
 function App() {
   return (
@@ -16,6 +16,12 @@ function App() {
       <Switch>
       <Route path='/' exact>
         <Home/>
+        </Route>
+        <Route path='/home'>
+          <Home/>
+        </Route>
+        <Route path='/about'>
+          <About/>
         </Route>
         <Route path='/login'>
           <Login/>
