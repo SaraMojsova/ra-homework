@@ -39,7 +39,7 @@ const NavbarButtonsContainer = styled.div`
 `;
 
 // TODO: Implmenet Link component for all navigation buttons
-const NavbarButtons = ({ isLoggedIn }) => {
+const NavbarButtons = ({ isLoggedIn, style}) => {
   const logOutHandler=()=>{
     if(!isLoggedIn){
       console.log('Log out')
@@ -47,7 +47,7 @@ const NavbarButtons = ({ isLoggedIn }) => {
   }
 
   return (
-    <NavbarButtonsContainer>
+    <NavbarButtonsContainer style={style}>
       <div className='search-btn btn-container'>
         <img src={search} alt='Search' />
       </div>

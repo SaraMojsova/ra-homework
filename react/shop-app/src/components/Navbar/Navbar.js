@@ -66,16 +66,20 @@ const NavBarContainer = styled.div`
 
 function NavBar({
   navItems = [],
+  isOpen,
+  setIsOpen,
+  isLoggedIn
 }) {
 
-    const [isLoggedIn, setIsLoggedIn]= useState(false)
+    // const [isOpen,setIsOpen]=useState(false)
+
 
   return (
     <NavBarContainer>
       <div className='nav-center'>
         <div className='nav-header'>
           <img src={logo} alt='Logo' />
-          <button className='nav-toggle'>
+          <button className='nav-toggle' onClick={()=>{setIsOpen(!isOpen)}}>
             <FaBars />
           </button>
         </div>
