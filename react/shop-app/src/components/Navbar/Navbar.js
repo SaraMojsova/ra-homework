@@ -41,6 +41,10 @@ const NavBarContainer = styled.div`
     display: none;
     list-style: none;
   }
+  .link-style{
+    color:white;
+    text-decoration:none;
+}
 
   @media (min-width: 992px) {
     .nav-center {
@@ -96,7 +100,8 @@ function NavBar({
               return (
                 // TODO: Implement Link component and add the url parameter
                 <li key={`${index}_${id}`}>
-                 <Link to={url}>{label}</Link> 
+                 <Link className='link-style'
+                 to={url}>{label}</Link> 
                  </li>
               )
             })

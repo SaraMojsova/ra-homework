@@ -28,7 +28,7 @@ const Sidebar =({isOpen, setIsOpen, navItems=[], isLoggedIn})=>{
               return (
                 // TODO: Implement Link component and add the url parameter
                 <li key={`${index}_${id}`}>
-                 <Link onClick={()=>{setIsOpen(!isOpen)}}
+                 <Link className='link-style' onClick={()=>{setIsOpen(!isOpen)}}
                   to={url}>{label}</Link> 
                  </li>
               )

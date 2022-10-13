@@ -20,19 +20,17 @@ display: none;
 .show-buttons{
     display:flex;
 }
-
 .nav-links{
     list-style: none;
     display:flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     padding: 0;
 }
 .nav-links li{
-    margin-right: 5px;
-    text-decoration: none;
-    color:white;
+    margin-right: 10px;
+    font-size: 20px;
 }
 .sidebar-close-btn{
     width:50px;
@@ -45,6 +43,10 @@ display: none;
 .close-btn-div{
     display: flex;
     justify-content: flex-end;
+}
+.link-style{
+    color:white;
+    text-decoration:none;
 }
 
   @media screen and (min-width: 992px) {
